@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            tools:context="codeclobber.com.ytstorrents.codeclobber.com.ytsmovies.fragments.movieDetailTabs.DetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/layout_trailer_preview"
+            layout="@layout/layout_trailer_preview"/>
+
+        <include
+            android:id="@+id/layout_thumbnail_detail"
+            layout="@layout/layout_movie_detail_with_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thumbnail_detail_top_margin"/>
+
+        <include
+            android:id="@+id/layout_movie_info_texts"
+            layout="@layout/layout_movie_information_texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_thumbnail_detail"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoMedium
+            android:id="@+id/tv_cast_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_movie_info_texts"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/cast"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cast_title"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin_small"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

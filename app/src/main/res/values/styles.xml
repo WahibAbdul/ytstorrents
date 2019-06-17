@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+    </style>
+
+    <!-- Toolbar theme light-->
+    <style name="DarkLightBar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+        <item name="android:textColorSecondary">@android:color/primary_text_dark</item>
+        <item name="actionModeBackground">@color/primary</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <!--Spinner Theme-->
+
+    <style name="ActionBarThemeOverlayWhite">
+        <item name="android:textSize">@dimen/text_size_XMedium</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="colorControlNormal">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+    </style>
+
+    <style name="Widget.MyTheme.HeaderBar.SpinnerTextWhite" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:theme">@style/ActionBarThemeOverlayWhite</item>
+    </style>
+
+</resources>

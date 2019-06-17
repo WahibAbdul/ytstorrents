@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin_XLarge"
+              android:paddingLeft="@dimen/activity_vertical_margin"
+              android:paddingRight="@dimen/activity_vertical_margin"
+              android:paddingTop="@dimen/activity_vertical_margin">
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/select_movie_quality"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/text_size_large"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_720p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/_720p_icon"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/quality_icon"
+            android:src="@drawable/_720p_icon"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoLight
+            android:id="@+id/_720_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/_720p_icon"
+            android:layout_toEndOf="@id/_720p_icon"
+            android:layout_toRightOf="@id/_720p_icon"
+            android:text="@string/file_size"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoMedium
+            android:id="@+id/tv_720p_filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/_720_file_size"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_medium"
+            android:layout_marginStart="@dimen/activity_vertical_margin_medium"
+            android:layout_toEndOf="@id/_720_file_size"
+            android:layout_toRightOf="@id/_720_file_size"
+            android:text="@string/download_size_value"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <include
+            android:id="@+id/btn_download_720p"
+            layout="@layout/layout_download_button_with_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_720_file_size"
+            android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+            android:layout_toEndOf="@id/_720p_icon"
+            android:layout_toRightOf="@id/_720p_icon"/>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_1080p_separator"
+        layout="@layout/layout_horizontal_line_light"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_1080p"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/_1080p_icon"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/quality_icon"
+            android:src="@drawable/_1080p_icon"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoLight
+            android:id="@+id/_1080_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/_1080p_icon"
+            android:layout_toEndOf="@id/_1080p_icon"
+            android:layout_toRightOf="@id/_1080p_icon"
+            android:text="@string/file_size"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoMedium
+            android:id="@+id/tv_1080p_filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/_1080_file_size"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_medium"
+            android:layout_marginStart="@dimen/activity_vertical_margin_medium"
+            android:layout_toEndOf="@id/_1080_file_size"
+            android:layout_toRightOf="@id/_1080_file_size"
+            android:text="@string/download_size_value"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <include
+            android:id="@+id/btn_download_1080p"
+            layout="@layout/layout_download_button_with_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_1080_file_size"
+            android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+            android:layout_toEndOf="@id/_1080p_icon"
+            android:layout_toRightOf="@id/_1080p_icon"/>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_3d_separator"
+        layout="@layout/layout_horizontal_line_light"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        >
+
+        <ImageView
+            android:id="@+id/_3d_icon"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/quality_icon"
+            android:src="@drawable/_3d_icon"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoLight
+            android:id="@+id/_3d_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/_3d_icon"
+            android:layout_toEndOf="@id/_3d_icon"
+            android:layout_toRightOf="@id/_3d_icon"
+            android:text="@string/file_size"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoMedium
+            android:id="@+id/tv_3d_filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/_3d_file_size"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_medium"
+            android:layout_marginStart="@dimen/activity_vertical_margin_medium"
+            android:layout_toEndOf="@id/_3d_file_size"
+            android:layout_toRightOf="@id/_3d_file_size"
+            android:text="@string/download_size_value"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <include
+            android:id="@+id/btn_download_3d"
+            layout="@layout/layout_download_button_with_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_3d_file_size"
+            android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+            android:layout_toEndOf="@id/_3d_icon"
+            android:layout_toRightOf="@id/_3d_icon"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

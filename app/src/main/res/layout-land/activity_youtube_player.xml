@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_youtube_player"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="codeclobber.com.ytstorrents.codeclobber.com.ytsmovies.activities.YoutubePlayerActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbHorizontal="@drawable/scrollbar_thumbnail"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumbnail"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoMedium
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin_medium"
+        android:layout_marginRight="@dimen/activity_vertical_margin_medium"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/title"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_size_large"/>
+
+
+
+</LinearLayout>

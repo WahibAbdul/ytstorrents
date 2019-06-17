@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="codeclobber.com.ytsbrowser.fragments.SettingsFragment">
+
+    <!-- Notifications Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_notifications_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifications"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/tv_notifications_title"
+            android:layout_toRightOf="@id/tv_notifications_title"
+            android:checked="true"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoLight
+            android:id="@+id/tv_notifications_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_notifications_title"
+            android:text="@string/notifications_description"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_horizontal_line_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/text_size_medium"
+        android:layout_marginTop="@dimen/text_size_medium"
+        />
+
+
+    <!-- Premium Layout-->
+    <RelativeLayout
+        android:id="@+id/ll_premiumRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_premium_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upgrade_to_premium"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoLight
+            android:id="@+id/tv_premium_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_premium_title"
+            android:text="@string/premium_description"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_horizontal_line_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/text_size_medium"
+        android:layout_marginTop="@dimen/text_size_medium"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ll_aboutRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_large"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoLight
+            android:id="@+id/tv_about_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_about_title"
+            android:text="@string/premium_description"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

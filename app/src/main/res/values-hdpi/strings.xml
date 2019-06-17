@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--String Native Banners size-->
+    <string name="native_banner_small">280x80</string>
+    <string name="native_banner_large">280x260</string>
+</resources>

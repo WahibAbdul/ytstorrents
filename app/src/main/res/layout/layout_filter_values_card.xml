@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/filter_values_card_size"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:paddingEnd="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="0dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin_medium">
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_XSmall"
+            android:layout_marginRight="@dimen/activity_vertical_margin_XSmall"
+            android:text="@string/quality"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_XMedium"/>
+
+        <Spinner
+            android:id="@+id/sp_quality"
+            style="@style/Widget.MyTheme.HeaderBar.SpinnerTextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_quality"
+            android:layout_toEndOf="@+id/tv_quality"
+            android:layout_toRightOf="@+id/tv_quality"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/sp_quality"
+            android:layout_toLeftOf="@+id/sp_rating"
+            android:layout_toRightOf="@+id/sp_quality"
+            android:layout_toStartOf="@+id/sp_rating"
+            android:gravity="end"
+            android:text="@string/rating"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_XMedium"/>
+
+        <Spinner
+            android:id="@+id/sp_rating"
+            style="@style/Widget.MyTheme.HeaderBar.SpinnerTextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_rating"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_small"
+            android:layout_marginStart="@dimen/activity_vertical_margin_small"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumbnail"/>
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_order_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_quality"
+            android:layout_marginTop="@dimen/activity_vertical_margin_XMedium"
+            android:text="@string/order_by"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_XMedium"/>
+
+        <Spinner
+            android:id="@+id/sp_orderBy"
+            style="@style/Widget.MyTheme.HeaderBar.SpinnerTextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_order_by"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_XMedium"
+            android:layout_marginStart="@dimen/activity_vertical_margin_XMedium"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumbnail"
+            />
+
+        <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+            android:id="@+id/tv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_by"
+            android:layout_marginTop="@dimen/activity_vertical_margin_XMedium"
+            android:text="@string/genre_colon"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_XMedium"/>
+
+        <Spinner
+            android:id="@+id/sp_genre"
+            style="@style/Widget.MyTheme.HeaderBar.SpinnerTextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_genre"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_XMedium"
+            android:layout_marginStart="@dimen/activity_vertical_margin_XMedium"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumbnail"
+            />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/activity_vertical_margin_small"
+            android:layout_marginRight="@dimen/activity_vertical_margin_small"
+            android:background="@null"
+            android:text="@string/search"
+            android:textColor="@color/accent"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

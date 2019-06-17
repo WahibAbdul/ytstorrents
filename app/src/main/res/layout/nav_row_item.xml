@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/background"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:clickable="true"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/activity_vertical_margin"
+              android:paddingRight="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/img_menu_item"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/menu_item"
+        app:srcCompat="@drawable/ic_home"/>
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/home"
+        android:textColor="@color/icons"
+        android:textSize="@dimen/text_size_medium"/>
+
+</LinearLayout>

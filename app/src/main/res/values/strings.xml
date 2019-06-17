@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">YTS Browser</string>
+
+
+    <!-- Nav Bar Menu-->
+    <string name="home">Home</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="browse_all">Browse All</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+
+    <!--Nav Bar Settings-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--Content Description-->
+    <string name="menu_item">Menu Item</string>
+    <string name="blurry_back_cover">Blurry back cover</string>
+
+    <!--Tab Title-->
+    <string name="detail">DETAIL</string>
+    <string name="suggestions">SUGGESTIONS</string>
+    <string name="upcoming">UPCOMING</string>
+
+    <string-array name="movie_detail_tabs">
+        <item>@string/detail</item>
+        <item>@string/suggestions</item>
+    </string-array>
+
+    <!--Movie Card Place holders-->
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
+    <string name="rating_star">Rating Star</string>
+    <string name="rating_value">7.6</string>
+    <string name="year_value">2016</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="play_button">Play Button</string>
+    <string name="trailer_cover">Trailer Cover</string>
+    <string name="likes_value">700</string>
+    <string name="available_in">Available in:</string>
+    <string name="_720p_value">720p</string>
+    <string name="_1080p_value">1080p</string>
+    <string name="_3d">3D</string>
+    <string name="likes_icon">Likes Icon</string>
+    <string name="imdb_logo">IMDB logo</string>
+    <string name="download_button">Download button</string>
+    <string name="download">Download</string>
+    <string name="pg_13">PG-13</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="movie_detail">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable.</string>
+    <string name="cast">Cast</string>
+    <string name="no_similar_movies">No Similar Movies</string>
+    <string name="as">As</string>
+    <string name="quality">Quality:</string>
+    <string name="rating">Rating:</string>
+    <string name="order_by">Order By:</string>
+    <string name="genre_colon">Genre:</string>
+    <string name="select_movie_quality">Select movie quality</string>
+    <string name="quality_icon">Quality Icon</string>
+    <string name="file_size">File Size:</string>
+    <string name="download_size_value">1.65GB</string>
+    <string name="go_back_button">Go Back Button</string>
+    <string name="go_forward_button">Go Forward Button</string>
+
+
+    <!--Ad ID String-->
+    <string name="ad_movie_detail_native_id">ca-app-pub-5469999443465935/8504801604</string>
+    <string name="ad_suggest_movies_native_id">ca-app-pub-5469999443465935/4574129605</string>
+    <string name="ad_webView_native_id">ca-app-pub-5469999443465935/9004329201</string>
+    <string name="ad_search_list_native_id">ca-app-pub-5469999443465935/4434528801</string>
+    <string name="ad_youtube_native_id">ca-app-pub-5469999443465935/7527596003</string>
+    <string name="ad_top_rated_native_id">ca-app-pub-5469999443465935/5043304402</string>
+    <string name="ad_latest_movies_native_id">ca-app-pub-5469999443465935/6520037607</string>
+
+    <string name="ad_search_back_interstitial_id">ca-app-pub-5469999443465935/2957795607</string>
+    <string name="ad_webView_back_interstitial_id">ca-app-pub-5469999443465935/2957795607</string>
+
+    <string name="base64_in_app_key">TUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUExWmxKNktDWU1jU2tzVkF0ek9ZNkkvTnR5T1hKc3R2U3ZMMlcra2hUMnIvWjBMUWNlNnE0K0g0YzQvdGsvQU1DdHZFTXh3djVjWEh4Z0ROYnVnRTZpZFBrNEZNSnRWK21pR1RpaVRVQ2YwbFBaZXBSUEduNExpZVdabzUwOEFCZWZDT3h3TkwwSGRYeHRoenRqeDJ2TjBCMEkzOTN1VUhQZysyeHZWbEoyMlo5SnUwZzMyYUlFNWt5Umg4ODFORmxBTk54MkNxQ3hwY0Q2YThXR212MG1HTWg4azU3U3QrRGVXaUtNYko2ZG5UaURNekw2QzFYZFdEU0V1NmdvRiszUlUrYnIyd2xEK2pIOWQ1V3U0ZVkvQm9vT2gwSlBVMmZ3U3ZmTlhqaXpsdUJsbjlhY2FvTnZhakQ2Y3ZLdnNZY3dFM3FKRWgvQlVhbHIvamJWMTd6WlFJREFRQUI=</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_description">Receive notifications when new movies are available for download</string>
+    <string name="premium_description">Upgrade to premium version to have an ad-free experience</string>
+    <string name="upgrade_to_premium">Upgrade To Premium</string>
+    <string name="about">About</string>
+
+    <!--String Array for Spinner-->
+    <string-array name="quality_values">
+        <item>All</item>
+        <item>720p</item>
+        <item>1080p</item>
+        <item>3D</item>
+    </string-array>
+
+    <string-array name="rating_values">
+        <item>All</item>
+        <item>9+</item>
+        <item>8+</item>
+        <item>7+</item>
+        <item>6+</item>
+        <item>5+</item>
+        <item>4+</item>
+        <item>3+</item>
+        <item>2+</item>
+        <item>1+</item>
+    </string-array>
+
+
+    <string-array name="order_by_keys">
+        <item>Latest</item>
+        <item>Title</item>
+        <item>Year</item>
+        <item>Rating</item>
+        <item>Peers</item>
+        <item>Seeds</item>
+        <item>Downloads</item>
+        <item>Likes</item>
+    </string-array>
+    <string-array name="order_by_values">
+        <item>date_added</item>
+        <item>title</item>
+        <item>year</item>
+        <item>rating</item>
+        <item>peers</item>
+        <item>seeds</item>
+        <item>download_count</item>
+        <item>like_count</item>
+    </string-array>
+
+    <string-array name="genre_values">
+        <item>All</item>
+        <item>Action</item>
+        <item>Adventure</item>
+
+        <item>Animation</item>
+        <item>Biography</item>
+        <item>Comedy</item>
+
+        <item>Crime</item>
+        <item>Documentary</item>
+        <item>Drama</item>
+
+        <item>Family</item>
+        <item>Fantasy</item>
+        <item>Film-Noir</item>
+
+        <item>Game-Show</item>
+        <item>History</item>
+        <item>Horror</item>
+
+        <item>Music</item>
+        <item>Musical</item>
+        <item>Mystery</item>
+
+        <item>News</item>
+        <item>Reality-TV</item>
+        <item>Romance</item>
+
+        <item>Sci-Fi</item>
+        <item>Sport</item>
+        <item>Talk-Show</item>
+
+        <item>Thriller</item>
+        <item>War</item>
+        <item>Western</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_coverImage"
+        android:layout_width="@dimen/cover_image_width"
+        android:layout_height="@dimen/cover_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginStart="-8dp"
+        app:riv_border_color="@color/secondary_text"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="5dp"/>
+
+    <ImageView
+        android:id="@+id/icon_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/img_coverImage"
+        android:layout_toRightOf="@+id/img_coverImage"
+        android:contentDescription="@string/likes_icon"
+        app:srcCompat="@drawable/ic_favorite_accent"/>
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/icon_imdb"
+        android:layout_alignLeft="@+id/tv_rating"
+        android:layout_alignStart="@+id/tv_rating"
+        android:text="@string/likes_value"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_size_XMedium"/>
+
+    <ImageView
+        android:id="@+id/icon_imdb"
+        android:layout_width="49dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/icon_likes"
+        android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+        android:layout_toEndOf="@+id/img_coverImage"
+        android:layout_toRightOf="@+id/img_coverImage"
+        android:clickable="true"
+        android:contentDescription="@string/imdb_logo"
+        android:src="@drawable/logo_imdb"/>
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon_imdb"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@+id/icon_imdb"
+        android:layout_toRightOf="@+id/icon_imdb"
+        android:clickable="true"
+        android:text="@string/rating_value"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_size_XMedium"/>
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_available_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_imdb"
+        android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+        android:layout_toEndOf="@+id/img_coverImage"
+        android:layout_toRightOf="@+id/img_coverImage"
+        android:text="@string/available_in"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_size_XMedium"/>
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_720_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_available_text"
+        android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+        android:layout_toEndOf="@+id/img_coverImage"
+        android:layout_toRightOf="@+id/img_coverImage"
+        android:background="@drawable/torrent_textview_background"
+        android:paddingBottom="@dimen/activity_vertical_margin_XSmall"
+        android:paddingLeft="@dimen/activity_vertical_margin_medium"
+        android:paddingRight="@dimen/activity_vertical_margin_medium"
+        android:paddingTop="@dimen/activity_vertical_margin_XSmall"
+        android:text="@string/_720p_value"
+        android:textColor="@color/primary_text"
+        />
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_1080_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_available_text"
+        android:layout_marginLeft="@dimen/activity_vertical_margin_medium"
+        android:layout_marginRight="@dimen/activity_vertical_margin_medium"
+        android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+        android:layout_toEndOf="@+id/tv_720_p"
+        android:layout_toRightOf="@+id/tv_720_p"
+        android:background="@drawable/torrent_textview_background"
+        android:paddingBottom="@dimen/activity_vertical_margin_XSmall"
+        android:paddingLeft="@dimen/activity_vertical_margin_medium"
+        android:paddingRight="@dimen/activity_vertical_margin_medium"
+        android:paddingTop="@dimen/activity_vertical_margin_XSmall"
+        android:text="@string/_1080p_value"
+        android:textColor="@color/primary_text"
+        />
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_720_p"
+
+        android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+        android:layout_toEndOf="@+id/img_coverImage"
+        android:layout_toRightOf="@+id/img_coverImage"
+        android:background="@drawable/torrent_textview_background"
+        android:paddingBottom="@dimen/activity_vertical_margin_XSmall"
+        android:paddingLeft="@dimen/activity_vertical_margin_medium"
+        android:paddingRight="@dimen/activity_vertical_margin_medium"
+        android:paddingTop="@dimen/activity_vertical_margin_XSmall"
+        android:text="@string/_3d"
+        android:textColor="@color/primary_text"
+        />
+
+    <codeclobber.com.ytsbrowser.views.textview.CCTextViewRobotoRegular
+        android:id="@+id/tv_pg_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_720_p"
+        android:layout_marginLeft="@dimen/activity_vertical_margin_medium"
+        android:layout_marginRight="@dimen/activity_vertical_margin_medium"
+        android:layout_marginTop="@dimen/activity_vertical_margin_medium"
+        android:layout_toEndOf="@+id/tv_3d"
+        android:layout_toRightOf="@+id/tv_3d"
+        android:text="@string/pg_13"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_size_XMedium"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

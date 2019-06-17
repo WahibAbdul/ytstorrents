@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Item Count-->
+    <integer name="movies_column_span">4</integer>
+
+</resources>

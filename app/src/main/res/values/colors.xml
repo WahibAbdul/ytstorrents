@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#252525</color>
+    <color name="primary_dark">#212121</color>
+    <color name="primary_light">#303030</color>
+    <color name="background">#1D1D1D</color>
+    <color name="accent">#6AC045</color>
+    <color name="primary_text">#FFF</color>
+    <color name="secondary_text">#b8ffffff</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!--NavBar Colors-->
+    <color name="navHeaderBackground">#151515</color>
+    <color name="selectedMenu">#967ed321</color>
+
+</resources>

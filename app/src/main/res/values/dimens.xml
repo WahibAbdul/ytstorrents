@@ -1,0 +1,36 @@
+<resources>
+
+    <!--Margins and Padding-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_large">24dp</dimen>
+    <dimen name="activity_vertical_margin_XLarge">32dp</dimen>
+    <dimen name="activity_vertical_margin_XXLarge">64dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_XMedium">12dp</dimen>
+    <dimen name="activity_vertical_margin_medium">8dp</dimen>
+    <dimen name="activity_vertical_margin_small">4dp</dimen>
+    <dimen name="activity_vertical_margin_XSmall">2dp</dimen>
+
+
+    <!--Text Sizes-->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    <dimen name="text_size_XMedium">17sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+
+    <!--Item Sizes-->
+    <dimen name="toolbar_elevation">6dp</dimen>
+    <dimen name="toolbar_elevation_null">0dp</dimen>
+    <dimen name="navHeaderHeight">170dp</dimen>
+    <dimen name="cover_image_width">150dp</dimen>
+    <dimen name="cover_image_height">200dp</dimen>
+    <dimen name="cover_image_width_medium">120dp</dimen>
+    <dimen name="cover_image_height_medium">170dp</dimen>
+    <dimen name="trailer_preview_height">150dp</dimen>
+    <dimen name="icon_small_size">20dp</dimen>
+    <dimen name="thumbnail_detail_top_margin">110dp</dimen>
+    <dimen name="icon_size_medium">40dp</dimen>
+    <dimen name="filter_values_card_size">160dp</dimen>
+
+</resources>
